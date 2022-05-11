@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    font-family: Inter, sans-serif;
+}
+
+/* NAV BAR */
+header {
+    border: 1px solid blue;
+}
+/* NAV BAR FONTS */
+.logo .logo-text {
+    font-size: 1.8rem;
+    color: #3A404E;
+
+}
+.navigation, .cadastrar{
+    font-size: 1.6rem;
+}
+
+.page-nav a, .nav-buttons a {
+    color: var(--text-color);
+}
+
+/* ================== */
+
+nav {
+    padding: 1.8rem 8rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid blue;
+}
+
+.logo, .navigation, .page-nav, .nav-buttons {
+    display: inline-block;
+}
+
+.logo {
+    border: 1px solid blue;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 11.9rem;
+}
+.logo img {
+    margin-right: 0.8rem;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid blue;
+}
+.navigation a {
+    text-decoration: none;
+}
+
+.page-nav a {
+    margin-right: 3.2rem;
+}
+
+
+.nav-buttons button{
+    border: 1px solid var(--main-color);
+    border-radius: 0.8rem;
+    background-color: var(--main-color);
+    color: white;
+    padding: 1rem 1.8rem;
+}
+.nav-buttons a {
+    margin-right: 1.2rem;
+}
+
+/* ABOUT SECTION */
+

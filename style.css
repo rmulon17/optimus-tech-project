@@ -24,8 +24,12 @@ h1 {
     color: var(--gray-color);
 }
 
-h3 {
+h3, .stat-number {
     color: var(--main-color);
+}
+
+p {
+    font-size: 1.6rem;
 }
 
 /* NAV BAR */
@@ -98,7 +102,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid blue;
 }
 
 .about-content h3, h1 {
@@ -116,8 +119,32 @@ nav {
     font-weight: 600;
 }
 
-.about-content p {
-    font-size: 1.6rem;
+/* METRICS SECTION */
+.metrics {
+    margin-inline: 8rem;
+    padding-bottom: 9.6rem;
 }
 
-/* METRICS SECTION */
+.stats {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.stat {
+    width: 28rem;
+}
+
+.stat .stat-number {
+    display: block;
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 7.2rem;
+    margin-bottom: 1.2rem;
+}
+.stat h3 {
+    font-size: 1.8rem;
+    color: var(--gray-color);
+    font-weight: 500;
+    line-height: 2.8rem;
+    margin-bottom: 0.8rem;
+}

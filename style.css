@@ -9,6 +9,8 @@
 :root {
     --text-color: #667085;
     --main-color: #8E2424;
+    --gray-color: #101828;
+
 
     font-size: 62.5%;
 }
@@ -18,11 +20,15 @@ body {
     font-family: Inter, sans-serif;
 }
 
-/* NAV BAR */
-header {
-    border: 1px solid blue;
+h1 {
+    color: var(--gray-color);
 }
-/* NAV BAR FONTS */
+
+h3 {
+    color: var(--main-color);
+}
+
+/* NAV BAR */
 .logo .logo-text {
     font-size: 1.8rem;
     color: #3A404E;
@@ -32,17 +38,16 @@ header {
     font-size: 1.6rem;
 }
 
-.page-nav a, .nav-buttons a {
+.page-nav a, .nav-buttons a, p {
     color: var(--text-color);
 }
 
-/* ================== */
+
 
 nav {
     padding: 1.8rem 8rem;
     display: flex;
     align-items: center;
-    border: 1px solid blue;
 }
 
 .logo, .navigation, .page-nav, .nav-buttons {
@@ -50,7 +55,6 @@ nav {
 }
 
 .logo {
-    border: 1px solid blue;
     display: inline-flex;
     align-items: center;
     margin-right: 11.9rem;
@@ -64,7 +68,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid blue;
 }
 .navigation a {
     text-decoration: none;
@@ -81,6 +84,7 @@ nav {
     background-color: var(--main-color);
     color: white;
     padding: 1rem 1.8rem;
+    cursor: pointer;
 }
 .nav-buttons a {
     margin-right: 1.2rem;
@@ -88,3 +92,32 @@ nav {
 
 /* ABOUT SECTION */
 
+.about {
+    padding-block: 9.6rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+}
+
+.about-content h3, h1 {
+    margin-bottom: 2.4rem;
+}
+
+.about-content h3 {
+    font-size:1.6rem;
+    line-height: 2.4rem;
+}
+
+.about-content h1 {
+    font-size: 4.8rem;
+    line-height: 6rem;
+    font-weight: 600;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+}
+
+/* METRICS SECTION */

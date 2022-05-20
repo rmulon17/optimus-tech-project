@@ -148,3 +148,36 @@ nav {
     line-height: 2.8rem;
     margin-bottom: 0.8rem;
 }
+
+/* JOBS SECTION */
+.jobs {
+    padding-block: 9.6rem;
+}
+
+/* BANNER CONTENT */
+.banner-content, .banner-img {
+    margin-bottom: 6.4rem;
+}
+
+.banner-content {
+    text-align: center;
+}
+.banner-content h3, h2 {
+    margin-bottom: 2rem;
+}
+.banner-content h3 {
+    background-color: rgba(142, 36, 36, 0.05);
+    width: 12.5rem;
+    margin-inline: auto;
+    padding: 0.4rem 1.2rem;
+    border-radius: 1.6rem;
+}
+
+.banner-img {
+    max-width: 121.6rem;
+    margin-inline: auto;
+}
+.banner-img img {
+    display: block;
+}
+

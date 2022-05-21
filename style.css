@@ -10,7 +10,7 @@
     --text-color: #667085;
     --main-color: #8E2424;
     --gray-color: #101828;
-
+    --border: #EAECF0;
 
     font-size: 62.5%;
 }
@@ -28,8 +28,12 @@ h3, .stat-number {
     color: var(--main-color);
 }
 
-p {
+p, .job-details {
     font-size: 1.6rem;
+}
+
+.banner-content, .banner-img, .job-category {
+    margin-bottom: 6.4rem;
 }
 
 /* NAV BAR */
@@ -42,7 +46,7 @@ p {
     font-size: 1.6rem;
 }
 
-.page-nav a, .nav-buttons a, p {
+.page-nav a, .nav-buttons a, p, .job-details {
     color: var(--text-color);
 }
 
@@ -155,9 +159,7 @@ nav {
 }
 
 /* BANNER CONTENT */
-.banner-content, .banner-img {
-    margin-bottom: 6.4rem;
-}
+
 
 .banner-content {
     text-align: center;
@@ -181,3 +183,42 @@ nav {
     display: block;
 }
 
+/* OPEN JOB VACANCIES */
+.open-job-vacancies {
+    max-width: 102.8rem;
+    margin: 0 auto;
+}
+
+.job-category {
+    max-width: 76.8rem;
+    margin-inline: auto;
+}
+
+.job-category h3, h4 {
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.job-category h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.job-category h4 {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 3.2rem;
+}
+
+.job-post {
+    border: 0.1rem solid var(--border);
+    border-radius: 1.6rem;
+    margin-top: 3.2rem;
+    margin-bottom: 2.4rem;
+    padding: 2.4rem 2.4rem 2.8rem;
+}
+
+.job-details {
+    line-height: 2.4rem;
+    margin-right: 2.4rem;
+}

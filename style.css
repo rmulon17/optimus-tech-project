@@ -16,8 +16,10 @@
 }
 
 body {
+    width: 100%;
     height: 100%;
     font-family: Inter, sans-serif;
+    padding-bottom: 9.6rem;
 }
 
 h1 {
@@ -34,6 +36,10 @@ p, .job-details {
 
 .banner-content, .banner-img, .job-category {
     margin-bottom: 6.4rem;
+}
+
+body, .metrics, .jobs, .testimonial {
+    padding-bottom: 9.6rem;
 }
 
 /* NAV BAR */
@@ -56,6 +62,7 @@ nav {
     padding: 1.8rem 8rem;
     display: flex;
     align-items: center;
+    max-width: 120rem;
 }
 
 .logo, .navigation, .page-nav, .nav-buttons {
@@ -86,7 +93,7 @@ nav {
 }
 
 
-.nav-buttons button{
+.nav-buttons button, #submit-btn {
     border: 1px solid var(--main-color);
     border-radius: 0.8rem;
     background-color: var(--main-color);
@@ -99,7 +106,6 @@ nav {
 }
 
 /* ABOUT SECTION */
-
 .about {
     padding-block: 9.6rem;
     text-align: center;
@@ -123,15 +129,20 @@ nav {
     font-weight: 600;
 }
 
+.about-content p {
+    font-size: 2rem;
+    max-width: 79.2rem;
+}
+
 /* METRICS SECTION */
 .metrics {
     margin-inline: 8rem;
-    padding-bottom: 9.6rem;
 }
 
 .stats {
     display: flex;
     gap: 3.2rem;
+    /*flex-wrap: wrap;*/
 }
 
 .stat {
@@ -159,8 +170,6 @@ nav {
 }
 
 /* BANNER CONTENT */
-
-
 .banner-content {
     text-align: center;
 }
@@ -184,9 +193,7 @@ nav {
 }
 
 /* OPEN JOB VACANCIES */
-.jobs, .testimonial {
-    padding-bottom: 9.6rem;
-}
+
 .open-job-vacancies {
     max-width: 102.8rem;
     margin: 0 auto;
@@ -202,7 +209,7 @@ nav {
     font-weight: 500;
 }
 
-.job-category h3 {
+.job-category h3, form p {
     font-size: 2rem;
     line-height: 3rem;
 }
@@ -256,12 +263,47 @@ nav {
     color: var(--gray-color);
 }
 
-.quote {
+.quote, .form-title {
     font-size: 36px;
+    font-weight: 600;
     line-height: 4.4rem;
     letter-spacing: -0.02em;
 }
 
 .supporting-text {
     margin-top: 0.4rem;
+}
+
+/* FORM */
+form p {
+    margin-top: 2rem;
+}
+
+form .heading-supporting-text, .email-capture, footer {
+    text-align: center;
+}
+
+
+.email-capture {
+    margin-top: 4rem;
+    margin-bottom: 3.2rem;
+}
+
+input[type='email'] {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    width: 33rem;
+
+    padding: 1.2rem 1.6rem;
+    margin-right: 1.6rem;
+
+    border: 1px solid #D0D5DD;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 0.8rem;
+}
+
+#submit-btn {
+    padding: 1.2rem 2rem;
+    font-size: 1.6rem;
 }

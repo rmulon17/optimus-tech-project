@@ -46,7 +46,7 @@ p, .job-details {
     font-size: 1.6rem;
 }
 
-.page-nav a, .nav-buttons a, p, .job-details {
+.page-nav a, .nav-buttons a, p, .job-details, .supporting-text {
     color: var(--text-color);
 }
 
@@ -184,6 +184,9 @@ nav {
 }
 
 /* OPEN JOB VACANCIES */
+.jobs, .testimonial {
+    padding-bottom: 9.6rem;
+}
 .open-job-vacancies {
     max-width: 102.8rem;
     margin: 0 auto;
@@ -221,4 +224,44 @@ nav {
 .job-details {
     line-height: 2.4rem;
     margin-right: 2.4rem;
+}
+
+/* TESTIMONIAL */
+.container {
+    padding-inline: 3.2rem;
+}
+
+.content {
+    max-width: 121.6rem;
+    margin: 0 auto;
+    padding: 6.4rem;
+
+    text-align: center;
+
+    background: rgba(196, 25, 25, 0.03);
+    border-radius: 1.6rem;
+}
+
+.quote-subheading {
+    margin-bottom: 3.2rem;
+}
+.quote-subheading h3, .supporting-text {
+    font-size: 1.4rem;
+}
+.quote-subheading h3, .avatar {
+    margin-bottom: 1.6rem;
+}
+
+.quote, .attribution p {
+    color: var(--gray-color);
+}
+
+.quote {
+    font-size: 36px;
+    line-height: 4.4rem;
+    letter-spacing: -0.02em;
+}
+
+.supporting-text {
+    margin-top: 0.4rem;
 }
